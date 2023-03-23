@@ -1,0 +1,49 @@
+
+  body {
+    background-color: #9999c5;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 2em;
+    color:#151547;
+  }
+
+  header,
+  footer {
+    background-color: #42427c;
+  }
+
+  .avatar {
+    width: 8%;
+  }
+ 
+  section {
+    padding: 20px;
+    margin: 20px 400px 20px 400px;
+    background-color: black;
+    font-family: VT323;
+    color: white;
+  }
+
+  section h2 {
+    font-size: 40px;
+  }
+
+  section P {
+    font-size: 20px;
+  }
+
+  .liens {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  .logo {
+    height: 40px;
+  }
