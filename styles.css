@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10px;
+    padding-left: 10px
+}
+
+@media screen and (min-width: 1024px) {
+    /* Styles pour PC */
+    body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Styles pour tablette */
+    body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* Styles pour smartphone */
+    body {
+        font-size: 14px;
+    }
+}
+
+
+/* Styles pour la seconde page */
+.page2 {
+    background-color: #B0E0E6;
+}
+
+.page2 h1 {
+    text-align: center;
+}
+
+.page2 .bigger-text {
+    font-size: 1.2em;
+}
+
+.rainbow-text-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.rainbow-text span {
+  font-size: calc(2vw + 2vh + 3vmin); /* Augmentation de la taille de la police */
+  font-weight: bold; /* Ajout du style gras */
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+.fadeOut {
+  animation: fadeOut 2s linear forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
