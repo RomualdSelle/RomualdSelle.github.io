@@ -144,12 +144,12 @@ function play(cell) {
     var index = Array.from(cells).indexOf(cell);
     if (Etatjeu.indexOf(index) === -1) {
         Etatjeu.push(index);
-        cell.textContent = "X";
+        cell.textContent = "❌";
         checkGameOver();
         if (Etatjeu.length < 9) {
             var iaMove = bestMove(Etatjeu, 0)[1];
             Etatjeu.push(iaMove);
-            cells[iaMove].textContent = "O";
+            cells[iaMove].textContent = "⭕";
             checkGameOver();
         }
     }
@@ -179,7 +179,7 @@ function resetGame() {
     if (iaStarts) {
         var iaMove = bestMove(Etatjeu, 0)[1];
         Etatjeu.push(iaMove);
-        cells[iaMove].textContent = "O";
+        cells[iaMove].textContent = "⭕";
     }
 }
 
