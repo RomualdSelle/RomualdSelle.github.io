@@ -419,7 +419,7 @@ main::before {
   color: rgba(255, 255, 255, 0.7);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) and (orientation: portrait){
   /* Styles pour smartphone */
 .page3 footer {
   background-color: #1e222a;
@@ -432,7 +432,7 @@ align-items: center;
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) and (orientation: portrait){
   /* Styles pour smartphone */
   .page3 footer ul {
   height: 100%;
