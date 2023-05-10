@@ -124,10 +124,21 @@ main::before {
 }
 
 .header-container {
-  display: flex;
-  margin: -.5rem;
+  position: relative;
+display: flex;
+  margin: -.5rem -.5rem 0 -.5rem;
   align-items: center;
   height: 10vw;
+}
+
+.header-container::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: linear-gradient(black, transparent);
 }
 
 .logo {
@@ -400,14 +411,26 @@ main::before {
   background-color: white;
 }
 
-.page3 footer {
+.footer-container {
+  position: relative;
   background-color: #1e222a;
   height: 5vw;
-  margin: -.5rem;
+  margin: 0 -.5rem -.5rem -.5rem;
   padding: 5vw 0;
 }
 
-.page3 footer ul {
+.footer-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: linear-gradient(transparent, black);
+}
+
+.footer-container ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -415,7 +438,7 @@ main::before {
   justify-content: space-around;
   font-family: 'Bruno Ace SC', cursive;
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 1.5vw;
   color: rgba(255, 255, 255, 0.7);
 }
 
