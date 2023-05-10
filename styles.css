@@ -367,7 +367,7 @@ main::before {
       height: 50px;
       padding-bottom: 5px;
       text-align: center;
-      font-size: 30px;
+      font-size: 150%;
       cursor: pointer;
       z-index: 1000;
       display: none;
