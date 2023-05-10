@@ -308,7 +308,8 @@ main::before {
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      font-size: 40px;
+      font-family: 'Noto Sans Tagbanwa', sans-serif;
+      font-size: 70px;
       font-weight: bold;
       border-radius: 5px;
       user-select: none;
