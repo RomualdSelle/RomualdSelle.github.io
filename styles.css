@@ -310,7 +310,6 @@ main::before {
       cursor: pointer;
       font-family: 'Noto Sans Tagbanwa', sans-serif;
       font-size: 70px;
-      font-weight: bold;
       border-radius: 5px;
       user-select: none;
 }
