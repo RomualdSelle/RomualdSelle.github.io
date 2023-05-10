@@ -309,7 +309,7 @@ main::before {
       align-items: center;
       cursor: pointer;
       font-family: 'Noto Sans Tagbanwa', sans-serif;
-      font-size: 70px;
+      font-size: 50px;
       border-radius: 5px;
       user-select: none;
 }
