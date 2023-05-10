@@ -443,8 +443,7 @@ display: flex;
 }
 
 @media screen and (max-width: 767px) and (orientation: portrait){
-  /* Styles pour smartphone */
-.page3 footer {
+.footer-container {
   background-color: #1e222a;
   height: 30vw;
   margin: -.5rem;
@@ -456,10 +455,9 @@ align-items: center;
 
 
 @media screen and (max-width: 767px) and (orientation: portrait){
-  /* Styles pour smartphone */
-  .page3 footer ul {
+  .footer-container ul {
   height: 100%;
-display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: space around;
   padding: 0;
