@@ -230,7 +230,6 @@ main::before {
       width: 0;
 }
 
-/* Styles pour la grille des logos */
 .logo-grid {
       margin: 4vw;
       display: grid;
@@ -367,7 +366,7 @@ main::before {
       width: 50px;
       height: 50px;
       text-align: center;
-      font-size: 20px;
+      font-size: 30px;
       cursor: pointer;
       z-index: 1000;
       display: none;
