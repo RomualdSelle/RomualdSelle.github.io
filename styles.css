@@ -378,8 +378,10 @@ main::before {
       background-color: #444;
 }
 
-.messages ul {
+#messages ul {
       list-style: none;
+      margin: 0;
+      padding: 0;
 }
 
 .messages li {
