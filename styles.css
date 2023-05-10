@@ -29,7 +29,7 @@ html {
 @media screen and (max-width: 767px) {
   /* Styles pour smartphone */
   body {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
