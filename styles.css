@@ -264,9 +264,11 @@ main::before {
 }
 
 @keyframes animsensAnimation {
-  20% {
-    height: 0%
-  }
+      0%, 100% {
+      }
+      20% {
+            height: 0%
+      }
 }
 
 .page3 .animsens:hover {
