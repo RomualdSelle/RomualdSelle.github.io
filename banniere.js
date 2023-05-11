@@ -74,7 +74,4 @@ document.addEventListener('touchstart', function() {
     elements[i].classList.remove('animcursor');
     elements[i].classList.add('animsens');
   }
-    });
-  });
-});
 });
