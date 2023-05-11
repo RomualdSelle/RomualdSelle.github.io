@@ -217,23 +217,6 @@ main::before {
       right: 0;
 }
 
-.page3 .animcursor:hover,
-.page3 .animsens1 {
-      color: #2b6e65;
-}
-
-.page3 .animcursor:hover::before
-.page3 .animsens1 {
-      top: 50%;
-      width: 0;
-}
-
-.page3 .animcursor:hover::after
-.page3 .animsens1 {
-      bottom: 50%;
-      width: 0;
-}
-
 .page3 .animsens {
       font-family: 'Bruno Ace SC', cursive;
       font-weight: bold;
@@ -266,7 +249,22 @@ main::before {
       right: 0;
 }
 
+.page3 .animcursor:hover,
+.page3 .animsens1 {
+      color: #2b6e65;
+}
 
+.page3 .animcursor:hover::before
+.page3 .animsens1 {
+      top: 50%;
+      width: 0;
+}
+
+.page3 .animcursor:hover::after
+.page3 .animsens1 {
+      bottom: 50%;
+      width: 0;
+}
 
 .logo-grid {
       margin: 4vw;
