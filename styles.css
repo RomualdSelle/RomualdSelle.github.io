@@ -217,7 +217,7 @@ main::before {
       right: 0;
 }
 
-.page3 .animcursor:hover, {
+.page3 .animcursor:hover {
       color: #2b6e65;
 }
 
