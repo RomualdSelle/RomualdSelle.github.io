@@ -44,10 +44,18 @@ function toggleText(textId, buttonId) {
   if (paragraph.classList.contains("hidden")) {
     paragraph.classList.remove("hidden");
     button.textContent = "Masquer le texte";
+      if (button.classList.contains("animsens")) {
+          button.classList.remove("animsens");
+          button.classList.add("animsens1");
+      }
   } else {
     paragraph.classList.add("hidden");
     button.textContent = "Afficher le texte";
-  }
+      if (button.classList.contains("animsens1")) {
+          button.classList.remove("animsens1");
+          button.classList.add("animsens");
+      }
+   }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
