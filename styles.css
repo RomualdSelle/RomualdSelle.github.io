@@ -167,10 +167,6 @@ main::before {
       transition: opacity 1s;
 }
 
-.dissertation p {
-      text-indent: 5%;
-}
-
 .page3 .menu {
       text-align: center;
       margin-bottom: 10%;
@@ -203,7 +199,7 @@ main::before {
       content: '';
       position: absolute;
       width: 100%;
-      height: 5%;
+      height: 6%;
       background-color: #333;
       top: 0;
       left: 0;
@@ -249,7 +245,7 @@ main::before {
       content: '';
       position: absolute;
       width: 100%;
-      height: 2px;
+      height: 6%;
       background-color: #333;
       top: 0;
       left: 0;
@@ -281,7 +277,7 @@ main::before {
       content: '';
       position: absolute;
       width: 0;
-      height: 2px;
+      height: 6%;
       background-color: #333;
       top: 50%;
       left: 0;
@@ -335,13 +331,21 @@ main::before {
       cursor: pointer;
 }
 
+button {
+      font-size: 1rem;
+}
+
 .hidden {
       display: none;
 }
 
-#philosophy-paragraph {
+.dissertation {
       font-family: 'Dancing Script', cursive;
       font-size: 1.5em;
+}
+
+.dissertation p {
+      text-indent: 5%;
 }
 
 .morpion-container {
