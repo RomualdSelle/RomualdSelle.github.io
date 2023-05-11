@@ -217,13 +217,27 @@ main::before {
       right: 0;
 }
 
+.page3 .animcursor:hover, {
+      color: #2b6e65;
+}
+
+.page3 .animcursor:hover::before {
+      top: 50%;
+      width: 0;
+}
+
+.page3 .animcursor:hover::after {
+      bottom: 50%;
+      width: 0;
+}
+
 .page3 .animsens {
       font-family: 'Bruno Ace SC', cursive;
       font-weight: bold;
       display: inline-block;
       padding: 10px 20px;
       text-decoration: none;
-      color: #333;
+      color: #2b6e65;
       border: 0;
       background-color: transparent;
       position: relative;
@@ -249,21 +263,36 @@ main::before {
       right: 0;
 }
 
-.page3 .animcursor:hover,
 .page3 .animsens1 {
-      color: #2b6e65;
+      font-family: 'Bruno Ace SC', cursive;
+      font-weight: bold;
+      display: inline-block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #333;
+      border: 0;
+      background-color: transparent;
+      position: relative;
+      transition: color 0.3s;
 }
 
-.page3 .animcursor:hover::before
-.page3 .animsens1 {
+.page3 .animsens1::before,
+.page3 .animsens1::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background-color: #333;
       top: 50%;
-      width: 0;
+      left: 0;
+      transition: all 0.3s;
 }
 
-.page3 .animcursor:hover::after
-.page3 .animsens1 {
+.page3 .animsens1::after {
+      top: auto;
       bottom: 50%;
-      width: 0;
+      left: auto;
+      right: 0;
 }
 
 .logo-grid {
