@@ -191,7 +191,7 @@ main::before {
 
 .page3 .menu a,
 .page3 button,
-.page3.touch-device button:focus {
+.page3.touch-device button:active {
       font-family: 'Bruno Ace SC', cursive;
       font-weight: bold;
       display: inline-block;
@@ -204,12 +204,12 @@ main::before {
       transition: color 0.3s;
 }
 
-.page3 .menu a:before,
-.page3 .menu a:after,
-.page3 button:before,
-.page3 button:after,
-.page3.touch-device button:focus:before,
-.page3.touch-device button:focus:after
+.page3 .menu a::before,
+.page3 .menu a::after,
+.page3 button::before,
+.page3 button::after,
+.page3.touch-device button:active::before,
+.page3.touch-device button:active::after
  {
       content: '';
       position: absolute;
@@ -221,9 +221,9 @@ main::before {
       transition: all 0.3s;
 }
 
-.page3 .menu a:after,
-.page3 button:after,
-.page3.touch-device button:focus:after {
+.page3 .menu a::after,
+.page3 button::after,
+.page3.touch-device button:active::after {
       top: auto;
       bottom: 0;
       left: auto;
@@ -235,14 +235,14 @@ main::before {
       color: #ff3366;
 }
 
-.page3 .menu a:hover:before,
-.page3 button:hover:before {
+.page3 .menu a:hover::before,
+.page3 button:hover::before {
       top: 50%;
       width: 0;
 }
 
-.page3 .menu a:hover:after,
-.page3 button:hover:after {
+.page3 .menu a:hover::after,
+.page3 button:hover::after {
       bottom: 50%;
       width: 0;
 }
