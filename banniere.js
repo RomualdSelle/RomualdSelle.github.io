@@ -79,7 +79,7 @@ document.addEventListener('touchstart', function() {
 var animsensElements = document.querySelectorAll('.page3 .animsens');
 
 animsensElements.forEach(function(element) {
-  element.addEventListener('mouseenter', function() {
+  element.addEventListener('click', function() {
     element.classList.add('animate');
     
     // remove 'animate' class at the end of the animation
