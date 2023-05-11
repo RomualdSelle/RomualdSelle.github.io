@@ -266,7 +266,6 @@ main::before {
 @keyframes animsensAnimation {
   0%, 100% {
     color: #333;
-    width: 100%;
     top: 0;
     bottom: 0;
   }
