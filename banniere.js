@@ -74,9 +74,11 @@ document.addEventListener('touchstart', function() {
     elements[i].classList.remove('animcursor');
     elements[i].classList.add('animsens');
   }
+  var animsensElements = document.querySelectorAll('.page3 .animsens');
+    });
+  });
 });
-
-var animsensElements = document.querySelectorAll('.page3 .animsens');
+});
 
 animsensElements.forEach(function(element) {
   element.addEventListener('click', function() {
