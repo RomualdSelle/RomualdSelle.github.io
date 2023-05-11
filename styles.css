@@ -190,8 +190,7 @@ main::before {
 }
 
 .page3 .menu a,
-.page3 button,
-.page3.touch-device button:active {
+.page3 button {
       font-family: 'Bruno Ace SC', cursive;
       font-weight: bold;
       display: inline-block;
@@ -207,10 +206,7 @@ main::before {
 .page3 .menu a::before,
 .page3 .menu a::after,
 .page3 button::before,
-.page3 button::after,
-.page3.touch-device button:active::before,
-.page3.touch-device button:active::after
- {
+.page3 button::after {
       content: '';
       position: absolute;
       width: 100%;
@@ -222,8 +218,7 @@ main::before {
 }
 
 .page3 .menu a::after,
-.page3 button::after,
-.page3.touch-device button:active::after {
+.page3 button::after {
       top: auto;
       bottom: 0;
       left: auto;
