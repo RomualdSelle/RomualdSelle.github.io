@@ -45,7 +45,6 @@ function toggleText(textId, buttonId) {
     paragraph.classList.remove("hidden");
     button.textContent = "Masquer le texte";
       if (button.classList.contains("animsens")) {
-          button.classList.remove("animsens");
           button.classList.add("animsens1");
       }
   } else {
@@ -53,7 +52,6 @@ function toggleText(textId, buttonId) {
     button.textContent = "Afficher le texte";
       if (button.classList.contains("animsens1")) {
           button.classList.remove("animsens1");
-          button.classList.add("animsens");
       }
    }
 }
