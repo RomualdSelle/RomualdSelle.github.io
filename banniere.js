@@ -65,3 +65,14 @@ document.addEventListener("DOMContentLoaded", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 });
+
+document.addEventListener('touchstart', function() {
+  // Sélectionner tous les éléments avec la classe 'animcursor'
+  let elements = document.querySelectorAll('.animcursor');
+
+  // Parcourir tous les éléments et changer la classe 'animcursor' à 'animsens'
+  for(let i = 0; i < elements.length; i++) {
+    elements[i].classList.remove('animcursor');
+    elements[i].classList.add('animsens');
+  }
+});
