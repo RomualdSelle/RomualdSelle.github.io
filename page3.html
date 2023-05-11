@@ -32,12 +32,12 @@
             </div>
         </header>
         <main class="main">
-            <nav class="menu">
+            <div class="menu">
                 <ul>
-                    <li><a href="index.html">Page 1</a></li>
-                    <li><a href="page2.html">Page 2</a></li>
+                    <li><a href="index.html" class="anim">Page 1</a></li>
+                    <li><a href="page2.html" class="anim">Page 2</a></li>
                 </ul>
-            </nav>
+            </div>
             <h1>On continue...</h1>
             <h2>J'ai demandé à Midjourney de générer un nouveau logo pour la SNCF</h2>
             <div class="logo-grid">
@@ -62,7 +62,7 @@
                 <img class="modal-content" id="modalImage" />
             </div>
             <h2>Ici, une dissertation de philosophie générée par ChatGPT</h2>
-            <button id="toggle-button1" onclick="toggleText('philosophy-paragraph', 'toggle-button1')">Afficher le texte</button>
+            <button class="anim" id="toggle-button1" onclick="toggleText('philosophy-paragraph', 'toggle-button1')">Afficher le texte</button>
             <div class="dissertation">
                 <div id="philosophy-paragraph" class="hidden">
                     <h1>Faut-il avoir peur de la technique?</h1>
@@ -139,7 +139,7 @@
             <p>J'ai imaginé ce site, mais je n'ai pas écrit une seule ligne de code. Au cours de cette expérience, j'ai rencontré de nombreuses difficultés. Les principales étaient les limitations concernant le nombre de messages que je pouvais envoyer à ChatGPT et surtout la création du jeu de morpion intégré au site.</p>
             <p>En utilisant cette IA, j'ai appris deux choses importantes. Tout d'abord, j'ai compris qu'il est crucial de donner un contexte clair et détaillé lors de mes demandes. Plus le contexte est précis, plus la réponse de l'IA sera adaptée et pertinente. Ensuite, j'ai réalisé que ChatGPT est capable d'apprendre et d'évoluer. Les réponses à une question donnée peuvent varier en fonction du moment où je la pose, ce qui montre que l'IA améliore ses connaissances et ses compétences au fil du temps.</p>
             <p>Et voici les premières demandes (avec les fautes d'ortographe &#x1F601) que j'ai adressées à ChatGPT pour créer ce site :</p>
-            <button id="toggle-button2" onclick="toggleText('messages', 'toggle-button2')">Afficher le texte</button>
+            <button class="anim" id="toggle-button2" onclick="toggleText('messages', 'toggle-button2')">Afficher le texte</button>
             <div id="messages" class="hidden">
                 <ul class="messages">
                     <li>Cette conversation a pour but de créer les fichiers commentés HTML, CSS et JavaScript d'un site internet de 3 pages bien référencé sur Google étape par étape. Il faut 1 seul fichier CSS pour les 3 pages. Dans tes réponses il faut uniquement le nom du fichier et le code associé. La première page :
