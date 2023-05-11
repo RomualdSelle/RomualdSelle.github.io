@@ -235,6 +235,52 @@ main::before {
       width: 0;
 }
 
+.page3 .animsens {
+      font-family: 'Bruno Ace SC', cursive;
+      font-weight: bold;
+      display: inline-block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #333;
+      border: 0;
+      background-color: transparent;
+      position: relative;
+      transition: color 0.3s;
+}
+
+.page3 .animsens::before,
+.page3 .animsens::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #333;
+      top: 0;
+      left: 0;
+      transition: all 0.3s;
+}
+
+.page3 .animsens::after {
+      top: auto;
+      bottom: 0;
+      left: auto;
+      right: 0;
+}
+
+.page3 .animsens:hover {
+      color: #2b6e65;
+}
+
+.page3 .animsens:hover::before {
+      top: 50%;
+      width: 0;
+}
+
+.page3 .animsens:hover::after {
+      bottom: 50%;
+      width: 0;
+}
+
 .logo-grid {
       margin: 4vw;
       display: grid;
