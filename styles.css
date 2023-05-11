@@ -189,8 +189,7 @@ main::before {
       justify-content: space-around;
 }
 
-.page3 .menu a,
-.page3 button {
+.page3 .anim {
       font-family: 'Bruno Ace SC', cursive;
       font-weight: bold;
       display: inline-block;
@@ -203,10 +202,8 @@ main::before {
       transition: color 0.3s;
 }
 
-.page3 .menu a::before,
-.page3 .menu a::after,
-.page3 button::before,
-.page3 button::after {
+.page3 .anim::before,
+.page3 .anim::after {
       content: '';
       position: absolute;
       width: 100%;
@@ -217,27 +214,23 @@ main::before {
       transition: all 0.3s;
 }
 
-.page3 .menu a::after,
-.page3 button::after {
+.page3 .anim::after {
       top: auto;
       bottom: 0;
       left: auto;
       right: 0;
 }
 
-.page3 .menu a:hover,
-.page3 button:hover {
+.page3 .anim:hover {
       color: #2b6e65;
 }
 
-.page3 .menu a:hover::before,
-.page3 button:hover::before {
+.page3 .anim:hover::before {
       top: 50%;
       width: 0;
 }
 
-.page3 .menu a:hover::after,
-.page3 button:hover::after {
+.page3 .anim:hover::after {
       bottom: 50%;
       width: 0;
 }
