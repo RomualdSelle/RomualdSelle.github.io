@@ -44,16 +44,16 @@ function toggleText(textId, buttonId) {
   if (paragraph.classList.contains("hidden")) {
     paragraph.classList.remove("hidden");
     button.textContent = "Masquer le texte";
-      if (button.classList.contains("animsens")) {
-          button.classList.remove("animsens");
-          button.classList.add("animsens1");
+      if (button.classList.contains("animsens1")) {
+          button.classList.remove("animsens1");
+          button.classList.add("animsens2");
       }
   } else {
     paragraph.classList.add("hidden");
     button.textContent = "Afficher le texte";
-      if (button.classList.contains("animsens1")) {
-          button.classList.remove("animsens1");
-          button.classList.add("animsens");
+      if (button.classList.contains("animsens2")) {
+          button.classList.remove("animsens2");
+          button.classList.add("animsens1");
       }
    }
 }
@@ -80,6 +80,6 @@ document.addEventListener('touchstart', function() {
 
   for(let i = 0; i < elements.length; i++) {
     elements[i].classList.remove('animcursor');
-    elements[i].classList.add('animsens');
+    elements[i].classList.add('animsens1');
   }
 });
