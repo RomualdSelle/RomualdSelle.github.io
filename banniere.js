@@ -65,9 +65,3 @@ document.addEventListener("DOMContentLoaded", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 });
-
-document.addEventListener('touchend', function(e) {
-    if (e.target.tagName.toLowerCase() === 'button') {
-        e.target.blur();
-    }
-}, false);
