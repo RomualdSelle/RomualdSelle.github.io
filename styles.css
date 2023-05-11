@@ -167,10 +167,6 @@ main::before {
       transition: opacity 1s;
 }
 
-.hidden {
-      display: none;
-}
-
 .dissertation p {
       text-indent: 5%;
 }
