@@ -277,10 +277,6 @@ main::before {
   }
 }
 
-.page3 .animsens:hover {
-  animation: animsensAnimation 0.6s;
-}
-
 .page3 .animsens:hover::before,
 .page3 .animsens:hover::after {
   animation: animsensAnimation 0.6s;
