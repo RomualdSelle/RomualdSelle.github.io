@@ -9,7 +9,6 @@ html {
       max-width: 800px;
       margin-left: auto;
       margin-right: auto;
-      scroll-behavior: smooth;
 }
 
 @media screen and (min-width: 1024px) {
@@ -174,7 +173,7 @@ main::before {
 
 .page3 .menu ul {
       list-style: none;
-      font-size: 3vw;
+      font-size: min(5vw, 4em);
       padding: 0;
       margin: 0;
       display: flex;
