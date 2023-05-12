@@ -17,13 +17,13 @@ html {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
       body {
-            font-size: 16px;
+            font-size: 18px;
       }
 }
 
 @media screen and (max-width: 767px) {
       body {
-            font-size: 14px;
+            font-size: 16px;
       }
 }
 
@@ -171,7 +171,7 @@ main::before {
 
 .page3 .menu ul {
       list-style: none;
-      font-size: min(5vw, 46px);
+      font-size: max(min(5vw, 46px) 16px;
       padding: 0;
       margin: 0;
       display: flex;
@@ -196,7 +196,7 @@ main::before {
       content: '';
       position: absolute;
       width: 100%;
-      height: 2px;
+      height: min(.2vw, 2px);
       background-color: #333;
       top: 0;
       left: 0;
@@ -242,7 +242,7 @@ main::before {
       content: '';
       position: absolute;
       width: 100%;
-      height: 2px;
+      height: min(.2vw, 2px);
       background-color: #333;
       top: 0;
       left: 0;
@@ -274,7 +274,7 @@ main::before {
       content: '';
       position: absolute;
       width: 0;
-      height: 2px;
+      height: min(.2vw, 2px);
       background-color: #333;
       top: 50%;
       left: 0;
