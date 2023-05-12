@@ -182,7 +182,7 @@ main::before {
       font-family: 'Bruno Ace SC', cursive;
       font-weight: bold;
       display: inline-block;
-      padding: 10px 20px;
+      padding: min(1vw, 9px) min(2vw, 18px);
       text-decoration: none;
       color: #333;
       border: 0;
@@ -228,7 +228,7 @@ main::before {
       font-family: 'Bruno Ace SC', cursive;
       font-weight: bold;
       display: inline-block;
-      padding: 10px 20px;
+      padding: min(1vw, 9px) min(2vw, 18px);
       text-decoration: none;
       color: #333;
       border: 0;
@@ -260,7 +260,7 @@ main::before {
       font-family: 'Bruno Ace SC', cursive;
       font-weight: bold;
       display: inline-block;
-      padding: 10px 20px;
+      padding: min(1vw, 9px) min(2vw, 18px);
       text-decoration: none;
       color: #2b6e65;
       border: 0;
