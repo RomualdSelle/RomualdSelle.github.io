@@ -6,7 +6,7 @@ html {
       font-family: Arial, sans-serif;
       padding: 5%;
       max-width: 800px;
-      margin: 0, auto;
+      margin: 0 auto;
 }
 
 @media screen and (min-width: 1024px) {
