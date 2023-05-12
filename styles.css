@@ -220,13 +220,13 @@ main::before {
 }
 
 .page3 .main .cursor:hover::before,
-.page3 .main .menu .finger1:active {
+.page3 .main .menu .finger1:active::before {
       top: 50%;
       width: 0;
 }
 
 .page3 .main .cursor:hover::after,
-.page3 .main .menu .finger1:active {
+.page3 .main .menu .finger1:active::after {
       bottom: 50%;
       width: 0;
 }
