@@ -329,7 +329,7 @@ main::before {
 }
 
 button {
-      font-size: 1vw;
+      font-size: min(2vw, 18px);
 }
 
 .hidden {
