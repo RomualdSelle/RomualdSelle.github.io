@@ -214,16 +214,19 @@ main::before {
       right: 0;
 }
 
-.page3 .main .cursor:hover {
+.page3 .main .cursor:hover,
+.page3 .main .finger1:active {
       color: #2b6e65;
 }
 
-.page3 .main .cursor:hover::before {
+.page3 .main .cursor:hover::before,
+.page3 .main .finger1:active {
       top: 50%;
       width: 0;
 }
 
-.page3 .main .cursor:hover::after {
+.page3 .main .cursor:hover::after,
+.page3 .main .finger1:active {
       bottom: 50%;
       width: 0;
 }
