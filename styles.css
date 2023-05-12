@@ -332,7 +332,7 @@ main::before {
 }
 
 button {
-      font-size: 1rem;
+      font-size: 1vw;
 }
 
 .hidden {
