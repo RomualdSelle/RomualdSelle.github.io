@@ -408,9 +408,14 @@ button {
       font-size: 14px;
       cursor: pointer;
       z-index: 1000;
-      display: flex;
+      display: table;
       align-items: center;
       justify-content: center;
+}
+
+#backToTop p {
+      display: table-cell;
+      vertical-align: middle;
 }
 
 #backToTop.cursor:hover {
