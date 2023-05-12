@@ -333,6 +333,11 @@ button {
       box-shadow: 0 0 5px black;
 }
 
+.morpion-container::before {
+      display: flex
+      align-items: center;
+}
+
 .morpion {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
