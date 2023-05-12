@@ -166,7 +166,7 @@ main::before {
 
 .page3 .menu {
       text-align: center;
-      margin-bottom: 10%;
+      margin-bottom: min(10vw, 92px);
 }
 
 .page3 .menu ul {
