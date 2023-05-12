@@ -171,7 +171,7 @@ main::before {
 
 .page3 .menu ul {
       list-style: none;
-      font-size: min(5vw, 40px);
+      font-size: min(5vw, 46px);
       padding: 0;
       margin: 0;
       display: flex;
