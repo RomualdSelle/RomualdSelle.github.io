@@ -353,6 +353,7 @@ button {
       font-size: 50px;
       border-radius: 10px;
       user-select: none;
+      box-shadow: 0 0 5px black;
 }
 
 .score-container {
