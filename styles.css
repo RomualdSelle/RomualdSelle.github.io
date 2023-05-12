@@ -320,6 +320,11 @@ button {
       text-indent: 5%;
 }
 
+.game-container {
+      display: flex;
+      align-items: center;
+}
+
 .morpion-container {
       display: flex;
       flex-direction: column;
@@ -331,11 +336,6 @@ button {
       padding: 10px;
       border-radius: 10px;
       box-shadow: 0 0 5px black;
-}
-
-.morpion-container::before {
-      display: flex
-      align-items: center;
 }
 
 .morpion {
