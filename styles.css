@@ -206,15 +206,15 @@ main::before {
       transition: all 0.3s;
 }
 
-.page3 .cursor::after {
+.page3 .cursor::after,
+.page3 .finger1::after {
       top: auto;
       bottom: 0;
       left: auto;
       right: 0;
 }
 
-.page3 .cursor:hover,
-.page3 .finger1::after {
+.page3 .cursor:hover {
       color: #2b6e65;
 }
 
@@ -228,7 +228,7 @@ main::before {
       width: 0;
 }
 
-.page3 .fingers2 {
+.page3 .finger2 {
       font-family: 'Bruno Ace SC', cursive;
       font-weight: bold;
       display: inline-block;
