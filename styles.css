@@ -199,7 +199,7 @@ main::before {
       content: '';
       position: absolute;
       width: 100%;
-      height: min(.4vw, 4px);
+      height: 4px;
       background-color: #333;
       top: 0;
       left: 0;
@@ -246,7 +246,7 @@ main::before {
       content: '';
       position: absolute;
       width: 0;
-      height: min(.2vw, 2px);
+      height: 4px;
       background-color: #333;
       top: 50%;
       left: 0;
