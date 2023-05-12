@@ -178,8 +178,8 @@ main::before {
       justify-content: space-around;
 }
 
-.page3 .cursor,
-.page3 .finger1 {
+.page3 .main .cursor,
+.page3 .main .finger1 {
       font-family: 'Bruno Ace SC', cursive;
       font-weight: bold;
       display: inline-block;
@@ -192,10 +192,10 @@ main::before {
       transition: color 0.3s;
 }
 
-.page3 .cursor::before,
-.page3 .cursor::after,
-.page3 .finger1::before,
-.page3 .finger1::after {
+.page3 .main .cursor::before,
+.page3 .main .cursor::after,
+.page3 .main .finger1::before,
+.page3 .main .finger1::after {
       content: '';
       position: absolute;
       width: 100%;
@@ -206,29 +206,29 @@ main::before {
       transition: all 0.3s;
 }
 
-.page3 .cursor::after,
-.page3 .finger1::after {
+.page3 .main .cursor::after,
+.page3 .main .finger1::after {
       top: auto;
       bottom: 0;
       left: auto;
       right: 0;
 }
 
-.page3 .cursor:hover {
+.page3 .main .cursor:hover {
       color: #2b6e65;
 }
 
-.page3 .cursor:hover::before {
+.page3 .main .cursor:hover::before {
       top: 50%;
       width: 0;
 }
 
-.page3 .cursor:hover::after {
+.page3 .main .cursor:hover::after {
       bottom: 50%;
       width: 0;
 }
 
-.page3 .finger2 {
+.page3 .main .finger2 {
       font-family: 'Bruno Ace SC', cursive;
       font-weight: bold;
       display: inline-block;
@@ -241,8 +241,8 @@ main::before {
       transition: color 0.3s;
 }
 
-.page3 .finger2::before,
-.page3 .finger2::after {
+.page3 .main .finger2::before,
+.page3 .main .finger2::after {
       content: '';
       position: absolute;
       width: 0;
@@ -253,7 +253,7 @@ main::before {
       transition: all 0.3s;
 }
 
-.page3 .finger2::after {
+.page3 .main .finger2::after {
       top: auto;
       bottom: 50%;
       left: auto;
@@ -412,7 +412,7 @@ button {
       justify-content: center;
 }
 
-#backToTop:hover {
+#backToTop.cursor:hover {
       background-color: #444;
 }
 
