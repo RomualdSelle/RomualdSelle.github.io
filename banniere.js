@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("touchstart", function() {
-  function replaceElement(Id) {
+  function replaceElement(id) {
       let linkElement = document.getElementById(id);
       let newElement = document.createElement("p");
       let onclickValue = linkElement.getAttribute("onclick");
