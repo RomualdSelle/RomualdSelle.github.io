@@ -4,33 +4,34 @@ function fadeInOutText() {
     const text3 = document.getElementById("text3");
 
     setTimeout(() => {
-      text1.classList.add("fadeOut");
-      setTimeout(() => {
-        text1.classList.add("hidden");
-        text2.classList.remove("hidden");
-        text2.classList.add("fadeIn");
-      }, 3000);
+        text1.classList.add("fadeOut");
+        setTimeout(() => {
+            text1.classList.add("hidden");
+            text2.classList.remove("hidden");
+            text2.classList.add("fadeIn");
+        }, 3000);
     }, 1000);
 
     setTimeout(() => {
-      text2.classList.add("fadeOut");
-      setTimeout(() => {
-        text2.classList.add("hidden");
-        text3.classList.remove("hidden");
-        text3.classList.add("fadeIn");
-      }, 3000);
+        text2.classList.add("fadeOut");
+        setTimeout(() => {
+            text2.classList.add("hidden");
+            text3.classList.remove("hidden");
+            text3.classList.add("fadeIn");
+        }, 3000);
     }, 5000);
-  }
+}
 
-  window.addEventListener("load", fadeInOutText);
+window.addEventListener("load", fadeInOutText);
 
-  function openModal(imageSrc) {
-    const modal = document.getElementById("modal");
-    const modalImage = document.getElementById("modalImage");
-      
-    modalImage.src = imageSrc;
+function openModal(imageId, imageNumber, theme) {
+    const modal = document.getElementById("imageId");
+    const image = document.getElementById("theme" + "imageId");
+    const position = (-100 * imageId) + "%";
+    
+    image.setAtribute("right", position);
     modal.classList.remove("hidden");
-  }
+}
 
   function closeModal() {
     const modal = document.getElementById("modal");
@@ -54,7 +55,6 @@ function toggleText(textId, buttonId, webAdress) {
       button.classList.remove("finger1");
       button.classList.add("finger2");
       if (textId.includes("trans")) {
-          
           setTimeout(function() {
               button.classList.remove("finger2");
               button.classList.add("finger1");
@@ -106,6 +106,5 @@ document.addEventListener("touchstart", function() {
   for(let i = 0; i < elements.length; i++) {
     elements[i].classList.remove("cursor");
     elements[i].classList.add("finger1");
-  }
- 
+  } 
 });
