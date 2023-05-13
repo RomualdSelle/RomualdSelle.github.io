@@ -87,12 +87,10 @@ document.addEventListener("touchstart", function() {
       let linkElement = document.getElementById(id);
       let newElement = document.createElement("p");
       let onclickValue = linkElement.getAttribute("onclick");
-      let url = linkElement.href;
 
       newElement.id = linkElement.id;
       newElement.className = linkElement.className;
       newElement.setAttribute("onclick", onclickValue);
-      newElement.setAttribute("webAdress", url);
       newElement.innerHTML = linkElement.innerHTML;
       linkElement.parentNode.replaceChild(newElement, linkElement);
   }
