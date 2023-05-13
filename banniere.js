@@ -25,8 +25,8 @@ function fadeInOutText() {
 window.addEventListener("load", fadeInOutText);
 
 function openModal(imageTheme, imageNumber) {
-    const modal = document.getElementById("modal-" + "imageTheme");
-    const image = document.getElementById("modal-image-" + "imageNumber");
+    const modal = document.getElementById("modal-" + imageTheme);
+    const image = document.getElementById("modal-image-" + imageNumber);
     const position = (-100 * imageNumber) + "%";
     
     image.setAtribute("right", position);
