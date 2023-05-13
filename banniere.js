@@ -29,7 +29,7 @@ function openModal(imageTheme, imageNumber) {
     const image = document.getElementById("modal-image-" + imageNumber);
     const position = (-100 * imageNumber) + "%";
     
-    image.setAtribute("right", position);
+    image.style.right = position;
     modal.classList.remove("hidden");
 }
 
