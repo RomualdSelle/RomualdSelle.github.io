@@ -37,7 +37,7 @@ function fadeInOutText() {
     modal.classList.add("hidden");
   }
 
-function toggleText(textId, buttonId, webPageId) {
+function toggleText(textId, buttonId) {
   const paragraph = document.getElementById(textId);
   const button = document.getElementById(buttonId);
 
@@ -57,7 +57,7 @@ function toggleText(textId, buttonId, webPageId) {
           setTimeout(function() {
           button.classList.remove("finger2");
           button.classList.add("finger1");
-          windows.location.href = webPageId;
+          windows.location.href = paragraph.webAdress;
           }, 300);
       }
   } else if (button.classList.contains("finger2")) {
@@ -83,14 +83,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("touchstart", function() {
-  function replaceElement(id) {
+  function replaceElement(Id) {
       let linkElement = document.getElementById(id);
       let newElement = document.createElement("p");
       let onclickValue = linkElement.getAttribute("onclick");
+      let url = linkElement.href;
 
       newElement.id = linkElement.id;
       newElement.className = linkElement.className;
       newElement.setAttribute("onclick", onclickValue);
+      newElement.setAttribute("webAdress", url);
       newElement.innerHTML = linkElement.innerHTML;
       linkElement.parentNode.replaceChild(newElement, linkElement);
   }
