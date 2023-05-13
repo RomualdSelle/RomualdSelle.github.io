@@ -37,7 +37,7 @@ function fadeInOutText() {
     modal.classList.add("hidden");
   }
 
-function toggleText(textId, buttonId, webAdress) {
+function toggleText(textId, buttonId) {
   const paragraph = document.getElementById(textId);
   const button = document.getElementById(buttonId);
 
@@ -57,7 +57,7 @@ function toggleText(textId, buttonId, webAdress) {
           setTimeout(function() {
           button.classList.remove("finger2");
           button.classList.add("finger1");
-          windows.location.href = webAdress;
+          window.location.href = button.webAdress;
           }, 300);
       }
   } else if (button.classList.contains("finger2")) {
