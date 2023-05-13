@@ -84,13 +84,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("touchstart", function() {
   function replaceElement(id) {
-  let linkElement = document.getElementById(id);
-  let newElement = document.createElement("p");
+      let linkElement = document.getElementById(id);
+      let newElement = document.createElement("p");
+      let onclickValue = linkElement.getAttribute("onclick");
 
-  newElement.id = linkElement.id;
-  newElement.className = linkElement.className;
-  newElement.innerHTML = linkElement.innerHTML;
-  });
+      newElement.id = linkElement.id;
+      newElement.className = linkElement.className;
+      newElement.setAttribute("onclick", onclickValue);
+      newElement.innerHTML = linkElement.innerHTML;
+      linkElement.parentNode.replaceChild(newElement, linkElement);
+  }
   
   replaceElement("trans1")
   replaceElement("trans2")
