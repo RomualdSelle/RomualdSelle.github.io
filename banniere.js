@@ -37,7 +37,7 @@ function fadeInOutText() {
     modal.classList.add("hidden");
   }
 
-function toggleText(textId, buttonId) {
+function toggleText(textId, buttonId, webPageId) {
   const paragraph = document.getElementById(textId);
   const button = document.getElementById(buttonId);
 
@@ -51,8 +51,14 @@ function toggleText(textId, buttonId) {
     button.textContent = "Afficher le texte";
   }
   if (button.classList.contains("finger1")) {
-    button.classList.remove("finger1");
-    button.classList.add("finger2");
+      button.classList.remove("finger1");
+      button.classList.add("finger2");
+      if (textId.include("trans")) {
+          setTimeout(function() {
+          button.classList.remove("finger2");
+          button.classList.add("finger1");
+          windows.location.href = webPageId;
+          }, 300);
   } else if (button.classList.contains("finger2")) {
     button.classList.remove("finger2");
     button.classList.add("finger1");
