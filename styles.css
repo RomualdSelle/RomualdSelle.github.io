@@ -178,6 +178,10 @@ main::before {
       justify-content: space-around;
 }
 
+.page3 .menu p {
+      margin: 0;
+}
+
 .page3 .main .cursor,
 .page3 .main .finger1 {
       font-family: 'Bruno Ace SC', cursive;
