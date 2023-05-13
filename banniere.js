@@ -43,19 +43,18 @@ function toggleText(textId, buttonId) {
 
   if (paragraph.classList.contains("hidden")) {
     paragraph.classList.remove("hidden");
-    button.textContent = "Masquer le texte";
-      if (button.classList.contains("finger1")) {
-          button.classList.remove("finger1");
-          button.classList.add("finger2");
-      }
+    button.textContent = "Masquer le texte";     
   } else {
     paragraph.classList.add("hidden");
     button.textContent = "Afficher le texte";
-      if (button.classList.contains("finger2")) {
-          button.classList.remove("finger2");
-          button.classList.add("finger1");
-      }
-   }
+  }
+  if (button.classList.contains("finger1")) {
+    button.classList.remove("finger1");
+    button.classList.add("finger2");
+  } else if (button.classList.contains("finger2")) {
+    button.classList.remove("finger2");
+    button.classList.add("finger1");
+  }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
