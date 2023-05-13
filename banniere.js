@@ -27,7 +27,7 @@ function fadeInOutText() {
   function openModal(imageSrc) {
     const modal = document.getElementById("modal");
     const modalImage = document.getElementById("modalImage");
-
+      
     modalImage.src = imageSrc;
     modal.classList.remove("hidden");
   }
@@ -40,6 +40,7 @@ function fadeInOutText() {
 function toggleText(textId, buttonId, webPageId) {
   const paragraph = document.getElementById(textId);
   const button = document.getElementById(buttonId);
+  const webPage = document.getElementById(webPageId);
 
   if (paragraph.classList.contains("hidden")) {
     paragraph.classList.remove("hidden");
@@ -57,7 +58,7 @@ function toggleText(textId, buttonId, webPageId) {
           setTimeout(function() {
           button.classList.remove("finger2");
           button.classList.add("finger1");
-          windows.location.href = webPageId;
+          windows.location.href = webPage;
           }, 300);
       }
   } else if (button.classList.contains("finger2")) {
