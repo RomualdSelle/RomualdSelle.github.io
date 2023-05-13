@@ -228,7 +228,7 @@ main::before {
       width: 0;
 }
 
-.page3 .main .finger2 {
+.page3 .main #toggle-button.finger2 {
       font-family: 'Bruno Ace SC', cursive;
       font-weight: bold;
       display: inline-block;
@@ -241,8 +241,8 @@ main::before {
       transition: color 0.3s;
 }
 
-.page3 .main .finger2::before,
-.page3 .main .finger2::after {
+.page3 .main #toggle-button.finger2::before,
+.page3 .main #toggle-button.finger2::after {
       content: '';
       position: absolute;
       width: 0;
@@ -253,7 +253,7 @@ main::before {
       transition: all 0.3s;
 }
 
-.page3 .main .finger2::after {
+.page3 .main #toggle-button.finger2::after {
       top: auto;
       bottom: 50%;
       left: auto;
