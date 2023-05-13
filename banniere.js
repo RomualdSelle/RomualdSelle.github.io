@@ -43,8 +43,10 @@ function toggleText(textId, buttonId) {
 
   if (paragraph.classList.contains("hidden")) {
     paragraph.classList.remove("hidden");
-    button.textContent = "Masquer le texte";     
-  } else {
+    paragraph.classList.add("nohidden");
+    button.textContent = "Masquer le texte";
+  } else if (paragraph.classList.contains("nohidden")) {
+    paragraph.classList.remove("nohidden");
     paragraph.classList.add("hidden");
     button.textContent = "Afficher le texte";
   }
