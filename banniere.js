@@ -83,11 +83,23 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("touchstart", function() {
+  function replaceElement(id) {
+  let linkElement = document.getElementById(id);
+  let newElement = document.createElement("p");
 
+  newElement.id = linkElement.id;
+  newElement.className = linkElement.className;
+  newElement.innerHTML = linkElement.innerHTML;
+  });
+  
+  replaceElement("trans1")
+  replaceElement("trans2")
+  
   let elements = document.querySelectorAll(".cursor");
 
   for(let i = 0; i < elements.length; i++) {
     elements[i].classList.remove("cursor");
     elements[i].classList.add("finger1");
   }
+ 
 });
