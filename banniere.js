@@ -57,7 +57,7 @@ function toggleText(textId, buttonId) {
           setTimeout(function() {
           button.classList.remove("finger2");
           button.classList.add("finger1");
-          windows.location.href = paragraph.webAdress;
+          windows.location.href = button.webAdress;
           }, 300);
       }
   } else if (button.classList.contains("finger2")) {
