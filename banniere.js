@@ -53,7 +53,7 @@ function toggleText(textId, buttonId, webPageId) {
   if (button.classList.contains("finger1")) {
       button.classList.remove("finger1");
       button.classList.add("finger2");
-      if (textId.include("trans")) {
+      if (textId.includes("trans")) {
           setTimeout(function() {
           button.classList.remove("finger2");
           button.classList.add("finger1");
