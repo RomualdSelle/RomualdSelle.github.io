@@ -55,9 +55,11 @@ function toggleText(textId, buttonId, webAdress) {
       button.classList.add("finger2");
       if (textId.includes("trans")) {
           setTimeout(function() {
-          button.classList.remove("finger2");
-          button.classList.add("finger1");
-          window.location.href = webAdress;
+              button.classList.remove("finger2");
+              button.classList.add("finger1");
+          }, 300);
+          setTimeout(function() {
+              window.location.href = webAdress;
           }, 300);
       }
   } else if (button.classList.contains("finger2")) {
