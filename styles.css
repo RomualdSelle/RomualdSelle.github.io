@@ -311,7 +311,6 @@ main::before {
     positon: relative;
     display: flex;
     align-items: center;
-    left: -200%;
     height: 80vh;
     width: 80vh;
     overflow: hidden;
