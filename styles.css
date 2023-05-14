@@ -312,6 +312,7 @@ main::before {
      height: 80vh;
      width: 80vh;
      overflow: hidden;
+     order: 2;
 }
 
 .modal-image {
@@ -320,7 +321,6 @@ main::before {
     align-items: center;
     height: 80vh;
     width: 80vh;
-    order: 2;
 }
 
 .modal-image img {
