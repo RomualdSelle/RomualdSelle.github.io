@@ -28,7 +28,7 @@ function openModal(imageTheme, imagePosition) {
     const modal = document.getElementById("modal-" + imageTheme);
     const image = document.getElementById("modal-image-" + imageTheme);
     
-    image.style.right = imagePosition;
+    image.style.left = imagePosition;
     modal.classList.remove("hidden");
 }
 
