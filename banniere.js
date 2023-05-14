@@ -42,7 +42,7 @@ function scrollLeftTriangle(imageTheme, imageNumber) {
     const imagePosition = parseInt(image.style.left);
     
     if (imagePosition == 0) {
-        image.style.left = ((imagePosition - 1) * 100) + "%";
+        image.style.left = ((imageNumber - 1) * 100) + "%";
     } else {
         image.style.left = (imagePosition + 100) + "%";
     }
