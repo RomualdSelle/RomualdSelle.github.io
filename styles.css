@@ -354,7 +354,7 @@ main::before {
     order: 3;
 }
 
-@media screen (orientation: portrait) {
+@media screen and (orientation: portrait) {
       .modal-content {
             display: flex;
             flex-wrap: wrap;
