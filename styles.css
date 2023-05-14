@@ -367,7 +367,6 @@ main::before {
 
       .modal-image-container {
             grid-column: span 2;
-            align-self: end;
             position: relative;
             height: 90vw;
             width: 90vw;
