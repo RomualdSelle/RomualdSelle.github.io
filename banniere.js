@@ -24,11 +24,11 @@ function fadeInOutText() {
 
 window.addEventListener("load", fadeInOutText);
 
-function openModal(imageTheme, imageId, imageNumber) {
+function openModal(imageTheme, imageId, imagePosition) {
     const modal = document.getElementById("imageTheme");
     const image = document.getElementById("imageId");
     
-    image.style.right = position;
+    image.style.right = imagePosition;
     modal.classList.remove("hidden");
 }
 
