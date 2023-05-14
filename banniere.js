@@ -42,7 +42,7 @@ function scrollLeft(imageTheme, imageNumber) {
     const imagePosition = parseInt(image.style.left);
     
     if (imagePosition == 0) {
-        image.style.left = "-700%";
+        image.style.left = ((imagePosition - 1) * 100) + "%";
     } else {
         image.style.left = (imagePosition + 100) + "%";
     }
