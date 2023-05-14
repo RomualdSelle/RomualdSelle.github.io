@@ -37,7 +37,7 @@ function openModal(imageTheme, imagePosition) {
     modal.classList.add("hidden");
   }
 
-function scrollLeft(imageTheme, imageNumber) {
+function scrollLeftTriangle(imageTheme, imageNumber) {
     const image = document.getElementById("modal-image-" + imageTheme);
     const imagePosition = parseInt(image.style.left);
     
@@ -48,7 +48,7 @@ function scrollLeft(imageTheme, imageNumber) {
     }
 }
 
-function scrollRight(imageTheme, imageNumber) {
+function scrollRightTriangle(imageTheme, imageNumber) {
     const image = document.getElementById("modal-image-" + imageTheme);
     const imagePosition = parseInt(image.style.left);
     
