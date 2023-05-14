@@ -40,22 +40,24 @@
             <h1>On continue...</h1>
             <h2>J'ai demandé à Midjourney de générer un nouveau logo pour la SNCF</h2>
             <div class="logo-grid">
-                <img src="image/logo1.png" alt="Logo SNCF 1" onclick="openModal('image/logo1.png')" />
-                <img src="image/logo2.png" alt="Logo SNCF 2" onclick="openModal('image/logo2.png')" />
-                <img src="image/logo3.png" alt="Logo SNCF 3" onclick="openModal('image/logo3.png')" />
-                <img src="image/logo4.png" alt="Logo SNCF 4" onclick="openModal('image/logo4.png')" />
+                <img src="image/logo1.png" alt="Logo SNCF 1" onclick="openModal('logo','0')" />
+                <img src="image/logo2.png" alt="Logo SNCF 2" onclick="openModal('logo', '-110%')" />
+                <img src="image/logo3.png" alt="Logo SNCF 3" onclick="openModal('logo', '-220%')" />
+                <img src="image/logo4.png" alt="Logo SNCF 4" onclick="openModal('logo', '-330%')" />
             </div>
             <div id="modal-logo" class="modal hidden">
-                <div class="close" onclick="closeModal()">&times;</div>
+                <div class="close" onclick="closeModal('logo')">&times;</div>
                 <div class="modal-content">
-                    <div class="modal-image">
-                        <img src="image/logo1.png" alt="Logo SNCF 1" />
-                        <img src="image/logo2.png" alt="Logo SNCF 2" />
-                        <img src="image/logo3.png" alt="Logo SNCF 3" />
-                        <img src="image/logo4.png" alt="Logo SNCF 4" />
+                    <div class="modal-image-container">
+                        <div id="modal-image-logo" class="modal-image">
+                            <img src="image/logo1.png" alt="Logo SNCF 1" />
+                            <img src="image/logo2.png" alt="Logo SNCF 2" />
+                            <img src="image/logo3.png" alt="Logo SNCF 3" />
+                            <img src="image/logo4.png" alt="Logo SNCF 4" />
+                        </div>
                     </div>
-                    <div class="left" onclick="scrollLeft()"></div>
-                    <div class="right" onclick="scrollRight()"></div>
+                    <div class="left" onclick="scrollLeft('logo', '4')"></div>
+                    <div class="right" onclick="scrollRight('logo', '4')"></div>
                 </div>
             </div>
             <h2>Et voici les trains du futur</h2>
