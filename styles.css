@@ -301,15 +301,16 @@ main::before {
 
 .modal-content {
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       align-item: center;
       width: 100%;
       height: 100%;
 }
 
 .modal-image {
-      position: absolute;
       display: flex;
+      justify-content: center;
+      align-items: center;
       height: 80%;
       width: 80vh;
       order: 2;
@@ -317,14 +318,14 @@ main::before {
 
 .modal-image img {
       height: 100%;
-      margin: 20%;
+      margin: auto;
 }
 
 .left {
       width: 0;
       height: 0;
       border-top: 10px solid transparent;
-      border-botom: 10px solid transparent;
+      border-bottom: 10px solid transparent;
       border-right: 20px solid white;
       order: 1;
 }
@@ -333,7 +334,7 @@ main::before {
       width: 0;
       height: 0;
       border-top: 10px solid transparent;
-      border-botom: 10px solid transparent;
+      border-bottom: 10px solid transparent;
       border-left: 20px solid white;
       order: 3;
 }
