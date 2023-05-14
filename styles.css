@@ -389,7 +389,7 @@ main::before {
       }
 
       .left, .right {
-            align-self: end;
+            align-self: start;
             display: flex;
             align-items: center;
             justify-content: center;
