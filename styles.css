@@ -325,8 +325,7 @@ main::before {
 }
 
 .modal-image img {
-      margin: 0;
-      padding-right: 10%;
+      margin-right: 10%;
       max-height: 100%;
       max-width: 100%;
       object-fit: contain;
@@ -345,7 +344,6 @@ main::before {
     border-bottom: 10px solid transparent;
     border-right: 20px solid white;
     order: 1;
-    z-index: 2000;
 }
 
 .right {
