@@ -44,7 +44,7 @@ function scrollLeft(imageTheme, imageNumber) {
     if (imagePosition == 0) {
         image.style.left = "-700%";
     } else {
-        image.style.left = (imagePosition - 100) + "%";
+        image.style.left = (imagePosition + 100) + "%";
     }
 }
 
@@ -55,7 +55,7 @@ function scrollRight(imageTheme, imageNumber) {
     if (imagePosition == (imageNumber -1) * -100) {
         image.style.left = "0";
     } else {
-        image.style.left = (imagePosition + 100) + "%";
+        image.style.left = (imagePosition - 100) + "%";
     }
 }
 
