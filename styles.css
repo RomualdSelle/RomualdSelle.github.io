@@ -357,6 +357,7 @@ main::before {
 
 @media screen and (orientation: portrait) {
       .modal-content {
+            position: relative;
             display: grid;
             justify-items: center;
             justify-content: center;
