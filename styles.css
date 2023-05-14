@@ -326,8 +326,8 @@ main::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10vh; /* set a width for the arrow containers */
-    height: 80vh; /* make the arrow containers 80% of viewport height */
+    width: 0; /* set a width for the arrow containers */
+    height: 0; /* make the arrow containers 80% of viewport height */
 }
 
 .left {
