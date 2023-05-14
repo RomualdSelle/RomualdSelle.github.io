@@ -369,8 +369,8 @@ main::before {
             grid-column: span 2;
             align-self: center;
             position: relative;
-            max-height: 90vw;
-            max-width: 90vw;
+            height: 90vw;
+            width: 90vw;
             overflow: hidden;
       }
 
