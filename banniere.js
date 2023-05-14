@@ -42,9 +42,9 @@ function scrollLeftTriangle(imageTheme, imageNumber) {
     const imagePosition = parseInt(image.style.left);
     
     if (imagePosition == 0) {
-        image.style.left = ((imageNumber - 1) * -100) + "%";
+        image.style.left = ((imageNumber - 1) * -110) + "%";
     } else {
-        image.style.left = (imagePosition + 100) + "%";
+        image.style.left = (imagePosition + 110) + "%";
     }
 }
 
@@ -52,10 +52,10 @@ function scrollRightTriangle(imageTheme, imageNumber) {
     const image = document.getElementById("modal-image-" + imageTheme);
     const imagePosition = parseInt(image.style.left);
     
-    if (imagePosition == (imageNumber -1) * -100) {
-        image.style.left = "0";
+    if (imagePosition == (imageNumber -1) * -110) {
+        image.style.left = 0;
     } else {
-        image.style.left = (imagePosition - 100) + "%";
+        image.style.left = (imagePosition - 110) + "%";
     }
 }
 
