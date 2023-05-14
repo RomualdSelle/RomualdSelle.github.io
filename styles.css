@@ -326,7 +326,7 @@ main::before {
 
 .modal-image img {
       margin: 0;
-      padding-left: 10%;
+      padding-right: 10%;
       max-height: 100%;
       max-width: 100%;
       object-fit: contain;
