@@ -299,6 +299,7 @@ main::before {
       background-color: rgba(0, 0, 0, 0.8);
 }
 
+@media screen and (orientation: landscape) {
 .modal-content {
       display: flex;
       justify-content: center;
@@ -336,7 +337,7 @@ main::before {
     width: 0;
     height: 0;
 }
-
+      
 .left {
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
@@ -351,6 +352,7 @@ main::before {
     border-left: 20px solid white;
     margin-left: 10vh;
     order: 3;
+}
 }
 
 @media screen and (orientation: portrait) {
