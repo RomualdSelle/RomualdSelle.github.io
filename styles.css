@@ -308,12 +308,14 @@ main::before {
 }
 
 .modal-image {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 80vh;
-      width: 80vh;
-      order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 80vh;
+    overflow: hidden; /* hide overflowing content */
+    overflow-x: scroll; /* allow horizontal scrolling */
+    order: 2;
 }
 
 .modal-image img {
@@ -343,12 +345,6 @@ main::before {
     border-bottom: 10px solid transparent;
     border-left: 20px solid white;
     order: 3;
-}
-      
-
-@media screen and (orientation: portrait){
-      
-      }
 }
 
 button {
