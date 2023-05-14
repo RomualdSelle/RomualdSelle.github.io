@@ -309,7 +309,8 @@ main::before {
       position: relative;
       display: flex;
       height: 80%;
-      width: 80vh
+      width: 80vh;
+      order: 2;
 }
 
 .modal-image img {
@@ -323,6 +324,7 @@ main::before {
       border-top: 10px solid transparent;
       border-botom: 10px solid transparent;
       border-right: 20px solid white;
+      order: 1;
 }
 
 .right {
@@ -331,6 +333,7 @@ main::before {
       border-top: 10px solid transparent;
       border-botom: 10px solid transparent;
       border-left: 20px solid white;
+      order: 3;
 }
       
 
