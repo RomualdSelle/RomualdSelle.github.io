@@ -308,6 +308,7 @@ main::before {
 }
 
 .modal-image {
+    positon: relative;
     display: flex;
     align-items: center;
     left: -200%;
