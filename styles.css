@@ -312,6 +312,7 @@ main::before {
      height: 80vh;
      width: 80vh;
      overflow: hidden;
+}
 
 .modal-image {
     position: relative;
