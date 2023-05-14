@@ -32,10 +32,32 @@ function openModal(imageTheme, imagePosition) {
     modal.classList.remove("hidden");
 }
 
-  function closeModal() {
-    const modal = document.getElementById("modal");
+  function closeModal(imageTheme) {
+    const modal = document.getElementById("modal-" + imageTheme);
     modal.classList.add("hidden");
   }
+
+function scrollLeft(imageTheme, imageNumber) {
+    const image = document.getElementById("modal-image-" + imageTheme);
+    const imagePosition = parseInt(image.style.left);
+    
+    if (imagePosition == 0) {
+        image.style.left = "-700%";
+    } else {
+        image.style.left = (imagePosition - 100) + "%";
+    }
+}
+
+function scrollRight(imageTheme, imageNumber) {
+    const image = document.getElementById("modal-image-" + imageTheme);
+    const imagePosition = parseInt(image.style.left);
+    
+    if (imagePosition == (imageNumber -1) * -100) {
+        image.style.left = "0";
+    } else {
+        image.style.left = (imagePosition + 100) + "%";
+    }
+}
 
 function toggleText(textId, buttonId, webAdress) {
   const paragraph = document.getElementById(textId);
