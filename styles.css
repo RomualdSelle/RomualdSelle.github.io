@@ -319,8 +319,7 @@ main::before {
       position: relative;
       display: flex;
       align-items: center;
-      height: 90vh;
-      width: 90vh;
+
       transition: left 0.5s;
 }
 
