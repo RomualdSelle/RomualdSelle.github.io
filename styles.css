@@ -301,10 +301,12 @@ main::before {
 
 .modal-content {
       display: flex;
+      flex-direcyion: row;
       height: 100%;
 }
 
 .modal-image {
+      position: absolute;
       display: flex;
       height: 100%;
       width: 100vh
