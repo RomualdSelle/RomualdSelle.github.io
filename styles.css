@@ -308,7 +308,7 @@ main::before {
 }
 
 .modal-image {
-    position: relative;
+    position: absolute;
     display: flex;
     align-items: center;
     height: 80vh;
