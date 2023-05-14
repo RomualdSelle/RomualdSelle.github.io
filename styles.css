@@ -355,21 +355,20 @@ main::before {
 
 @media screen and (orientation: portrait) {
       .modal-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: stretch;
-            align-content: stretch;
+            display: grid;
+            justify-items: center;
+            grid-template-rows: 1fr auto;
+            grid-template-columns: 1fr 1fr;
             width: 100%;
             height: 100%;
       }
 
       .modal-image-container {
+            grid-column: span 2;
             position: relative;
             height: 90vw;
             width: 90vw;
             overflow: hidden;
-            order: 1;
       }
 
       .modal-image {
@@ -392,7 +391,6 @@ main::before {
             justify-content: center;
             width: 0;
             height: 0;
-            order: 2;
       }
 
       .left {
