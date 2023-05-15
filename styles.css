@@ -470,6 +470,10 @@ button.cursor {
       box-shadow: 0 0 5px black;
 }
 
+.cell:active {
+      background-color:#2b6e65;
+}
+
 .score-container {
       display: flex;
       justify-content: space-around;
