@@ -274,6 +274,7 @@ main::before {
 
 .logo-grid img {
       width: 100%;
+      cursor: pointer;
 }
 
 .close {
@@ -336,6 +337,7 @@ main::before {
     width: 0;
     height: 0;
       margin : 0 5vh;
+      cursor: pointer;
 }
       
 .left {
@@ -393,6 +395,7 @@ main::before {
             margin-top: 5vw;
             width: 0;
             height: 0;
+            cursor: pointer;
       }
 
       .left {
@@ -408,8 +411,9 @@ main::before {
       }
 }
 
-button {
+button.cursor {
       font-size: max(min(2vw, 18px), 14px);
+      cursor: pointer;
 }
 
 .hidden {
