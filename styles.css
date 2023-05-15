@@ -299,20 +299,16 @@ main::before {
       background-color: rgba(0, 0, 0, 0.8);
 }
 
-@media screen and (orientation: landscape) {
+
 .modal-content {
-      display: flex;
       justify-content: center;
-      align-items: center;
       width: 100%;
       height: 100%;
 }
 
 .modal-image-container {
-     position: relative;
-     width: 90vh;
-     overflow: hidden;
-     order: 2;
+      position: relative;
+      overflow: hidden;
 }
 
 .modal-image {
@@ -335,22 +331,49 @@ main::before {
     justify-content: center;
     width: 0;
     height: 0;
-      margin : 0 5vh;
-      cursor: pointer;
+    cursor: pointer;      
 }
       
 .left {
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-right: 20px solid white;
-    order: 1;
 }
 
 .right {
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-left: 20px solid white;
-    order: 3;
+}
+}
+
+
+@media screen and (orientation: landscape) {
+.modal-content {
+      display: flex;
+      align-items: center;
+}
+
+.modal-image-container {
+     width: 90vh;
+     order: 2;
+}
+
+.left, .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0;
+    height: 0;
+      cursor: pointer;
+}
+      
+.left {
+      order: 1;
+}
+
+.right {
+      order: 3;
 }
 }
 
@@ -358,55 +381,23 @@ main::before {
       .modal-content {
             display: grid;
             justify-items: center;
-            justify-content: center;
             align-content: center;
-            width: 100%;
-            height: 100%;
       }
 
       .modal-image-container {
             grid-column: span 2;
             align-self: center;
-            position: relative;
             height: min(90vw, 70vh);
             width: min(90vw, 70vh);
-            overflow: hidden;
-      }
-
-      .modal-image {
-            position: relative;
-            display: flex;
-            align-items: center;
-            transition: left 0.5s;
-      }
-
-      .modal-image img {
-            margin-right: 10%;
-            max-height: 100%;
-            max-width: 100%;
-            object-fit: contain;
       }
 
       .left, .right {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-top: 5vw;
             width: 0;
             height: 0;
             cursor: pointer;
-      }
-
-      .left {
-            border-top: 10px solid transparent;
-            border-bottom: 10px solid transparent;
-            border-right: 20px solid white;
-      }
-
-      .right {
-            border-top: 10px solid transparent;
-            border-bottom: 10px solid transparent;
-            border-left: 20px solid white;
       }
 }
 
@@ -468,10 +459,6 @@ button.cursor {
       border-radius: 10px;
       user-select: none;
       box-shadow: 0 0 5px black;
-}
-
-.cell:active {
-      background-color:#2b6e65;
 }
 
 .score-container {
