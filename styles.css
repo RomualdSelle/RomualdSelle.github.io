@@ -148,7 +148,7 @@ main::before {
 .banner-text {
       font-family: 'Bruno Ace SC', cursive;
       font-weight: bold;
-      font-size: calc(5vw + 1vmin);
+      font-size: 5vw;
       color: rgba(255, 255, 255, 0.7);
       text-align: center;
       white-space: nowrap;
@@ -265,10 +265,10 @@ main::before {
 }
 
 .logo-grid {
-      margin: 4vw;
+      margin: 3%;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 5vw;
+      gap: 5%;
       justify-items: center;
 }
 
