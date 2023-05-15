@@ -265,10 +265,10 @@ main::before {
 }
 
 .logo-grid {
-      margin: 3%;
+      margin: min(3%, 28px);
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 5%;
+      gap: min(5%, 46px);
       justify-items: center;
 }
 
