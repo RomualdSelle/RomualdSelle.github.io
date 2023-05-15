@@ -360,12 +360,7 @@ main::before {
 }
 
 .left, .right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 0;
-    height: 0;
-      cursor: pointer;
+      margin: 0 min(5vh, 46px);
 }
       
 .left {
@@ -392,12 +387,7 @@ main::before {
       }
 
       .left, .right {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 0;
-            height: 0;
-            cursor: pointer;
+            margin-top: min(5vw, 46px);
       }
 }
 
