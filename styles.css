@@ -310,7 +310,6 @@ main::before {
 
 .modal-image-container {
      position: relative;
-     height: 90vh;
      width: 90vh;
      overflow: hidden;
      order: 2;
@@ -336,13 +335,13 @@ main::before {
     justify-content: center;
     width: 0;
     height: 0;
+      margin : 0 5vh;
 }
       
 .left {
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-right: 20px solid white;
-    margin-right: 10vh;
     order: 1;
 }
 
@@ -350,7 +349,6 @@ main::before {
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-left: 20px solid white;
-    margin-left: 10vh;
     order: 3;
 }
 }
@@ -369,8 +367,8 @@ main::before {
             grid-column: span 2;
             align-self: center;
             position: relative;
-            height: 90vw;
-            width: 90vw;
+            height: min(90vw, 70vh);
+            width: min(90vw, 70vh);
             overflow: hidden;
       }
 
@@ -392,7 +390,7 @@ main::before {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-top: 10vw;
+            margin-top: 5vw;
             width: 0;
             height: 0;
       }
