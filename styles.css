@@ -299,7 +299,6 @@ main::before {
       background-color: rgba(0, 0, 0, 0.8);
 }
 
-
 .modal-content {
       justify-content: center;
       width: 100%;
@@ -326,18 +325,18 @@ main::before {
 }
 
 .left, .right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 0;
-    height: 0;
-    cursor: pointer;      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 0;
+      height: 0;
+      cursor: pointer;      
 }
       
 .left {
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-right: 20px solid white;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-right: 20px solid white;
 }
 
 .right {
@@ -345,8 +344,6 @@ main::before {
     border-bottom: 10px solid transparent;
     border-left: 20px solid white;
 }
-}
-
 
 @media screen and (orientation: landscape) {
 .modal-content {
