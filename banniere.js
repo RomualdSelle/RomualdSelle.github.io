@@ -100,10 +100,6 @@ document.addEventListener("DOMContentLoaded", function () {
             backToTopButton.style.display = "none";
         }
     });
-
-    backToTopButton.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    });
 });
 
 document.addEventListener("touchstart", function() {
