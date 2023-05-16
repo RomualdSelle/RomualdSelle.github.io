@@ -1,10 +1,8 @@
 var Etatjeu = new Array();
 var iaStarts = false;
 var cells = document.getElementsByClassName("cell");
-var playerScore = 0;
 var iaScore = 0;
 var iaScoreDisplay = document.getElementById("iaScore");
-var playerScoreDisplay = document.getElementById("playerScore");
 
 function remainingMoves(list) {
     var remaining = new Array();
@@ -123,7 +121,6 @@ function aGagneJoueur(list, joueur) {
     return winningIndices;
 }
 
-
 function checkGameOver() {
     var winningIndices = aGagneJoueur(Etatjeu, 0) || aGagneJoueur(Etatjeu, 1);
 
@@ -138,7 +135,6 @@ function checkGameOver() {
         gameOver();
     }
 }
-
 
 function play(cell) {
     var index = Array.from(cells).indexOf(cell);
@@ -155,8 +151,6 @@ function play(cell) {
     }
 }
 
-
-
 function gameOver() {
     for (let cell of cells) {
         cell.removeEventListener("click", clickHandler);
@@ -171,13 +165,14 @@ function clickHandler(event) {
 function resetGame() {
     for (let cell of cells) {
         cell.textContent = "";
-        cell.classList.remove("blink"); // Ajoutez cette ligne
+        cell.classList.remove("blink");
         cell.addEventListener("click", clickHandler);
     }
     Etatjeu = [];
     iaStarts = !iaStarts;
     if (iaStarts) {
-        var iaMove = bestMove(Etatjeu, 0)[1];
+        const random = [0, 2, 6, 8]
+        var iaMove = random[Math.floor(Math.random() * random.length)];
         Etatjeu.push(iaMove);
         cells[iaMove].textContent = "ᝪ";
     }
