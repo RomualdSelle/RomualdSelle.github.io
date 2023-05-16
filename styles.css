@@ -368,33 +368,33 @@ main::before {
 }
 
 .right {
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 20px solid white;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 20px solid white;
 }
 
 @media screen and (orientation: landscape) {
-.modal-content {
-      display: flex;
-      align-items: center;
-}
+      .modal-content {
+            display: flex;
+            align-items: center;
+      }
 
-.modal-image-container {
-     width: 90vh;
-     order: 2;
-}
+      .modal-image-container {
+            width: 90vh;
+            order: 2;
+      }
 
-.left, .right {
-      margin: 0 min(5vh, 46px);
-}
+      .left, .right {
+            margin: 0 min(5vh, 46px);
+      }
       
-.left {
-      order: 1;
-}
+      .left {
+            order: 1;
+      }
 
-.right {
-      order: 3;
-}
+      .right {
+            order: 3;
+      }
 }
 
 @media screen and (orientation: portrait) {
@@ -509,7 +509,7 @@ button.cursor {
 
 .blink {
       animation: blink .4s linear infinite;
-    }
+}
 
 @keyframes blink {
       0% { background-color: transparent; }
